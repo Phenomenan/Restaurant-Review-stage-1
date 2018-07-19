@@ -182,7 +182,7 @@ createRestaurantHTML = (restaurant) => {
   image.srcset = `${DBHelper.imageSmallUrlForRestaurant(restaurant)} 900w, ${DBHelper.imageUrlForRestaurant(restaurant)} 901w`;
   li.append(image);
 
-  const name = document.createElement('h1');
+  const name = document.createElement('h2');
   name.innerHTML = restaurant.name;
   li.append(name);
 
